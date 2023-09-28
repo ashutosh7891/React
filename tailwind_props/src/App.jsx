@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
 
-  let newArray = [1,2,3,4,5]
+  // let newArray = [1,2,3,4,5]
   
 
   return (
