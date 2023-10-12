@@ -13,9 +13,15 @@ useEffect(() => {
     console.log(data)
 },[currency])
 
+
+
 console.log(data)
 
 return data
+
+
+
+
 
 }
 

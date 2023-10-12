@@ -8,6 +8,8 @@ function App() {
   const [from , setFrom] = useState('usd')
   const [to , setTo] = useState('inr')
   const [convertedAmount , setConvertedAmount] = useState(null)
+
+
   
 
   const currencyInfo  = useCurrencyInfo(from)
@@ -39,7 +41,7 @@ function App() {
             <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                 <form
                     onSubmit={(e) => {
-                        e.preventDefault();
+                        e.preventDefault(); // defaulting to submit before the user do something 
                         convert()
                        
                     }}
@@ -70,7 +72,7 @@ function App() {
                             amount = {convertedAmount}
                             currencyOptions = {options}
                             onCurrencyChange={(currency) => setTo(currency)}
-                            selectCurrency={from}
+                            selectCurrency={to}
                             amountDisable
                             
                         />
