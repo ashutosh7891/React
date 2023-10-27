@@ -4,8 +4,8 @@ export const ToDoContext = createContext({
     todos: [
         {
             id : 1,
-            todo: "todo msg",
-            completed : false
+            todo: "todo msg", // mango , apple
+            completed : false // not completed
         }
     ],
     addToDo: (todo) => {},
