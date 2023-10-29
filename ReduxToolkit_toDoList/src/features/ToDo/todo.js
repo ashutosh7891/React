@@ -20,7 +20,7 @@ export const todoSlice = createSlice({
             const todo = {
                 id : nanoid(),
                 textValue: action.payload
-            },
+            }
             state.todos.push(todo)
         },
         removeTodo: (state,action) => { // state means current state we have , and action means data is passing through it
